@@ -6,6 +6,6 @@ elasticsearch:
   indexName: pocket
 
 kafka:
-  topic: application
+  topic: pocket-application
   bootstrapAddress: localhost:9092
   groupId: fr.esir.jxc

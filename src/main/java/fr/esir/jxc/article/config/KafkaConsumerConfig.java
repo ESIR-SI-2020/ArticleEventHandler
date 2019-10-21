@@ -56,7 +56,7 @@ public class KafkaConsumerConfig {
     return new DefaultKafkaConsumerFactory<>(
       consumerProperties(),
       new StringDeserializer(),
-      new JsonDeserializer<>(Event.class)
+      new JsonDeserializer<>(Event.class, Jackson.OBJECT_MAPPER)
     );
   }
 

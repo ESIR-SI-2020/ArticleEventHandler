@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.listener.MessageListener;
 import org.springframework.stereotype.Service;
 
+import fr.esir.jxc.article.config.Jackson;
 import fr.esir.jxc.article.events.ArticleAdded;
 import fr.esir.jxc.article.events.ArticleDeleted;
 import fr.esir.jxc.article.events.ArticleShared;
@@ -25,10 +26,9 @@ public class ApplicationEventsListener implements MessageListener<String, Event>
   private final ArticlesEventHandler eventsHandler;
 
   public ApplicationEventsListener(
-    @Autowired ObjectMapper objectMapper,
     @Autowired ArticlesEventHandler eventsHandler
   ) {
-    this.objectMapper = objectMapper;
+    this.objectMapper = Jackson.OBJECT_MAPPER;
     this.eventsHandler = eventsHandler;
   }
 
