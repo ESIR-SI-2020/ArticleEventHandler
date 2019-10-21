@@ -1,0 +1,10 @@
+elasticsearch:
+  clustername: pocket
+  host: localhost
+  port: 9300
+  home: /usr/local/opt/elasticsearch@5.6
+
+kafka:
+  topic: application
+  bootstrapAddress: localhost:9092
+  groupId: fr.esir.jxc
