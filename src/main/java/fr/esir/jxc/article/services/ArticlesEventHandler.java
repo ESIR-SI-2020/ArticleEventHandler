@@ -9,7 +9,7 @@ import fr.esir.jxc.article.events.ArticleAdded;
 import fr.esir.jxc.article.events.ArticleDeleted;
 import fr.esir.jxc.article.events.ArticleShared;
 import fr.esir.jxc.article.events.ArticleTagsSet;
-import fr.esir.jxc.article.models.Article;
+import fr.esir.jxc.domain.models.Article;
 import fr.esir.jxc.article.models.Articles;
 
 @Service
@@ -31,6 +31,7 @@ public class ArticlesEventHandler {
       Articles.generateUniqueId(),
       articleAdded.getArticleUrl(),
       articleAdded.getEmail(),
+      null,
       Collections.emptyList(),
       Collections.emptyList()
     );
@@ -49,6 +50,7 @@ public class ArticlesEventHandler {
           Articles.generateUniqueId(),
           sourceArticle.getUrl(),
           articleShared.getTargetEmail(),
+          articleShared.getOwnerEmail(),
           sourceArticle.getTags(),
           sourceArticle.getSuggestedTags()
         );

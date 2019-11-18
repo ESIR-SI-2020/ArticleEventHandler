@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.stereotype.Service;
 
-import fr.esir.jxc.article.models.Article;
+import fr.esir.jxc.domain.models.Article;
 import fr.esir.jxc.article.utils.ElasticSearchUtils;
 
 @Service

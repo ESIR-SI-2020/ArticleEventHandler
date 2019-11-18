@@ -3,6 +3,8 @@ package fr.esir.jxc.article.models;
 import java.util.List;
 import java.util.UUID;
 
+import fr.esir.jxc.domain.models.Article;
+
 public class Articles {
 
   public static final String ELASTIC_TYPE = "article";
@@ -16,6 +18,7 @@ public class Articles {
       article.getId(),
       article.getUrl(),
       article.getOwner(),
+      article.getSharedBy(),
       newTags,
       article.getSuggestedTags()
     );

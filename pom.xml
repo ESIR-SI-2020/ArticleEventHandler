@@ -15,24 +15,28 @@
     <artifactId>article-event-handler</artifactId>
     <version>1.0.0</version>
 
+    <properties>
+        <version.fr.jxc.core>1.1.0</version.fr.jxc.core>
+    </properties>
+
     <dependencies>
 
         <dependency>
             <groupId>${project.parent.groupId}</groupId>
             <artifactId>domain</artifactId>
-            <version>${project.parent.version}</version>
+            <version>${version.fr.jxc.core}</version>
         </dependency>
 
         <dependency>
             <groupId>${project.parent.groupId}</groupId>
             <artifactId>elastic-search</artifactId>
-            <version>${project.parent.version}</version>
+            <version>${version.fr.jxc.core}</version>
         </dependency>
 
         <dependency>
             <groupId>${project.parent.groupId}</groupId>
             <artifactId>kafka</artifactId>
-            <version>${project.parent.version}</version>
+            <version>${version.fr.jxc.core}</version>
         </dependency>
 
         <dependency>
