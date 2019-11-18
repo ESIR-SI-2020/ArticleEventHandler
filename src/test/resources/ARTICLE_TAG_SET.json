@@ -1,0 +1,10 @@
+{
+  "id": "1",
+  "type": "ARTICLE_TAG_SET",
+  "createdAt": "2011-12-03T10:16:30",
+  "metadata": {
+    "email": "foo@bar.com",
+    "articleId": "44e7cad7-a6e3-4195-a100-3960c03332ee",
+    "tags": [ "tag1", "tag2" ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "type": "ARTICLE_ADDED",
+  "createdAt": "2011-12-03T10:15:30",
+  "metadata": {
+    "email": "foo@bar.com",
+    "articleUrl": "http://medium.com/AntoineCheron/"
+  }
+}
